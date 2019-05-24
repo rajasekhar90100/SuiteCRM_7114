@@ -1,0 +1,11 @@
+<?php
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['name']='chargeability';
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['vname']='LBL_CHARGEABILITY';
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['type']='enum';
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['options']='solutions_chargeability';
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['importable']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['mass_update']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['audited']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['inline_edit']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['chargeability']['merge_filter']='disabled';
+?>

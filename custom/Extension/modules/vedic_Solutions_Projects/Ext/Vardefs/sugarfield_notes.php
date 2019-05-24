@@ -1,0 +1,12 @@
+<?php
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['name']='notes';
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['vname']='LBL_NOTES';
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['type']='text';
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['importable']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['mass_update']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['audited']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['inline_edit']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['rows']='6';
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['cols']='80';
+$dictionary['vedic_Solutions_Projects']['fields']['notes']['merge_filter']='disabled';
+?>

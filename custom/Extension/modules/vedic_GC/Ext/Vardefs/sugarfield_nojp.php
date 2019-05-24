@@ -1,0 +1,12 @@
+<?php
+$dictionary['vedic_GC']['fields']['nojp']['name']='nojp';
+$dictionary['vedic_GC']['fields']['nojp']['vname']='LBL_NOJP';
+$dictionary['vedic_GC']['fields']['nojp']['type']='radioenum';
+$dictionary['vedic_GC']['fields']['nojp']['dbType']='enum';
+$dictionary['vedic_GC']['fields']['nojp']['options']='gc_list';
+$dictionary['vedic_GC']['fields']['nojp']['importable']=true;
+$dictionary['vedic_GC']['fields']['nojp']['mass_update']=true;
+$dictionary['vedic_GC']['fields']['nojp']['audited']=true;
+$dictionary['vedic_GC']['fields']['nojp']['inline_edit']=false;
+$dictionary['vedic_GC']['fields']['nojp']['merge_filter']='disabled';
+?>

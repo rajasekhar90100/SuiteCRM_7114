@@ -1,0 +1,12 @@
+<?php
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['name']='sunday_news_paper';
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['vname']='LBL_SUNDAY_NEWS_PAPER';
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['type']='radioenum';
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['dbType']='enum';
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['options']='gc_list';
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['importable']=true;
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['mass_update']=true;
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['audited']=true;
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['inline_edit']=false;
+$dictionary['vedic_GC']['fields']['sunday_news_paper']['merge_filter']='disabled';
+?>

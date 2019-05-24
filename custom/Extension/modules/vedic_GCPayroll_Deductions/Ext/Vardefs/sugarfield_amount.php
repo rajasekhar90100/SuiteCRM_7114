@@ -1,0 +1,10 @@
+<?php
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['name']='amount';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['vname']='LBL_AMOUNT';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['type']='currency';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['importable']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['mass_update']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['audited']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['inline_edit']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['amount']['merge_filter']='disabled';
+?>

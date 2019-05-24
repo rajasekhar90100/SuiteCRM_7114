@@ -1,0 +1,81 @@
+{
+    "status": "Success",
+    "records": [
+        {
+            "email": "nammubhu@gmail.com",
+            "name": "Narmada Bhuvaneswaran",
+            "title": "CEO"
+        },
+        {
+            "email": "ravigadi@gmail.com",
+            "name": "Ravindra Gadi",
+            "title": "Project Mananger"
+        },
+        {
+            "email": "recruit@vedicsoft.com",
+            "name": "Recruit Vedic",
+            "title": "COO"
+        },
+        {
+            "email": "Amy_Ebersole@exchange.compaid.com",
+            "name": "Amy Ebersole",
+            "title": "Business Partner Recruiting Coordinator"
+        },
+        {
+            "email": "sushil@vedicsoft.com",
+            "name": "Sushil Kaul",
+            "title": "CTO"
+        },
+        {
+            "email": "kranthi29@gmail.com",
+            "name": "Kranthi Kiran Siddagoni",
+            "title": "Director"
+        },
+        {
+            "email": "srilu.m@gmail.com",
+            "name": "Quality Manager",
+            "title": "Srilakshmi Manchikalapudi"
+        }
+    ]
+}
+{
+    "status": "Success",
+    "records": [
+        {
+            "email": "nammubhu@gmail.com",
+            "name": "Narmada Bhuvaneswaran",
+            "title": "CEO"
+        },
+        {
+            "email": "ravigadi@gmail.com",
+            "name": "Ravindra Gadi",
+            "title": "Project Mananger"
+        },
+        {
+            "email": "recruit@vedicsoft.com",
+            "name": "Recruit Vedic",
+            "title": "COO"
+        },
+        {
+            "email": "Amy_Ebersole@exchange.compaid.com",
+            "name": "Amy Ebersole",
+            "title": "Business Partner Recruiting Coordinator"
+        },
+        {
+            "email": "sushil@vedicsoft.com",
+            "name": "Sushil Kaul",
+            "title": "CTO"
+        },
+        {
+            "email": "kranthi29@gmail.com",
+            "name": "Kranthi Kiran Siddagoni",
+            "title": "Director"
+        },
+        {
+            "email": "srilu.m@gmail.com",
+            "name": "Quality Manager",
+            "title": "Srilakshmi Manchikalapudi"
+        }
+    ]
+}
+

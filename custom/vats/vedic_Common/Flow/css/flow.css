@@ -1,0 +1,216 @@
+/**
+	* FileName => flow.css
+	* Modified By => udaykiran (Modified On Sep-13-2017)
+	* COMMENT => css for the bulk resume upload
+*/
+
+#content {
+	overflow:auto;
+}
+#frame {
+	margin:0 auto; 
+	text-align:left;
+}
+.flow-error {
+	display:none; 
+	font-size:14px; 
+	font-style:italic;
+}
+.flow-drop {
+	padding:15px; 
+	font-size:13px; 
+	color:#666; 
+	font-weight:bold;
+	background-color:#eee; 
+	border:2px dashed #aaa; 
+	border-radius:10px; 
+	margin-top:40px; 
+	z-index:9999;
+	display:none;
+	cursor:pointer;
+}
+.flow-text {
+	margin:15em auto;
+	text-align:center;
+}
+.flow-file {
+    background: #ccc;
+	padding: 20px 20px 1px 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    min-height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	text-align:center;
+	cursor: default;
+}
+.flow-dragover {
+	background-color:#ddd;
+}
+.flow-file-progress {
+	height:30px;
+	font-size:30px;
+	margin: 10px 0px;
+}
+.fa-green {
+	color:green;
+}
+.fa-red {
+	color:red;
+}
+.btn-edit {
+	background: #5670b6;
+    color: white;
+    width: 100%;
+    margin: 0px;
+    height: 20px;
+    padding: 0px;
+}
+.table-responsive {
+	display:none;
+	height: 32em;
+	margin-right: -15px;
+	overflow:auto;
+}
+.my-table {
+	table-layout: fixed;
+	width:100%;
+}
+/* Progress Bar */
+.progress {
+	height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.failure {
+	height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+     background-color: red; 
+	 border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.progress-bar {
+	float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress-striped .progress-bar,
+.progress-bar-striped {
+	background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+.progress.active .progress-bar,
+.progress-bar.active {
+	-webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+
+/* Popup */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Popup Content */
+.popup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* The Popup Close Button */
+.popup-close {
+	margin: 15px 0px;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.popup-close:hover,
+.popup-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup-header {
+    padding: 2px 16px;
+    background-color: #5670b6;
+    color: white;
+}
+.popup-body {
+	padding: 20px 16px;
+	max-height:400px;
+	overflow:auto;
+}
+
+
+.remove {
+	display:none;
+	cursor: pointer;
+    margin: -15px -10px;
+    font-size: 22px;
+}
+.processResumes,
+.clearResumes {
+    margin-top: 15px;
+	margin-bottom: 15px;
+	height: 3em;
+    width: 10em;
+    font-size: 1em;
+}
+
+.btn-success {
+	background:#5670b6 !important;
+}

@@ -1,0 +1,10 @@
+<?php
+$dictionary['User']['fields']['address_country']['name']='address_country';
+$dictionary['User']['fields']['address_country']['type']='enum';
+$dictionary['User']['fields']['address_country']['options']='parent_country_list';
+$dictionary['User']['fields']['address_country']['importable']=true;
+$dictionary['User']['fields']['address_country']['mass_update']=true;
+$dictionary['User']['fields']['address_country']['audited']=true;
+$dictionary['User']['fields']['address_country']['inline_edit']=false;
+$dictionary['User']['fields']['address_country']['merge_filter']='disabled';
+?>

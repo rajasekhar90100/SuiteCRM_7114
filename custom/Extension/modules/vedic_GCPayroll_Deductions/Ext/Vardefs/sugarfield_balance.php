@@ -1,0 +1,10 @@
+ <?php
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['name']='balance';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['vname']='Balance';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['type']='currency';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['importable']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['mass_update']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['audited']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['inline_edit']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['balance']['merge_filter']='disabled';
+?>

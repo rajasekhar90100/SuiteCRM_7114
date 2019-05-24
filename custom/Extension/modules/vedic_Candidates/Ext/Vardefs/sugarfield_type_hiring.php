@@ -1,0 +1,12 @@
+<?php
+$dictionary['vedic_Candidates']['fields']['type_hiring']['name']='type_hiring';
+$dictionary['vedic_Candidates']['fields']['type_hiring']['vname']='Type';
+$dictionary['vedic_Candidates']['fields']['type_hiring']['type']='enum';
+$dictionary['vedic_Candidates']['fields']['type_hiring']['options']='type_hiring_list';
+$dictionary['vedic_Candidates']['fields']['type_hiring']['importable']=true;
+$dictionary['vedic_Candidates']['fields']['type_hiring']['mass_update']=true;
+$dictionary['vedic_Candidates']['fields']['type_hiring']['audited']=true;
+$dictionary['vedic_Candidates']['fields']['type_hiring']['inline_edit']=true;
+$dictionary['vedic_Candidates']['fields']['type_hiring']['required']=true;
+$dictionary['vedic_Candidates']['fields']['type_hiring']['merge_filter']='disabled';
+?>

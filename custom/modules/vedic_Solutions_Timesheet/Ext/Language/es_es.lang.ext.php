@@ -1,0 +1,9 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_VEDIC_CANDIDATES_VEDIC_SOLUTIONS_TIMESHEET_1_FROM_VEDIC_CANDIDATES_TITLE'] = 'Candidates';
+$mod_strings['LBL_USERS_VEDIC_SOLUTIONS_TIMESHEET_1_FROM_USERS_TITLE'] = 'Users';
+
+?>

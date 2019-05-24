@@ -1,0 +1,10 @@
+<?php
+$dictionary['Project']['fields']['po_enddate']['name']='po_enddate';
+$dictionary['Project']['fields']['po_enddate']['vname']='LBL_PO_ENDDATE';
+$dictionary['Project']['fields']['po_enddate']['type']='date';
+$dictionary['Project']['fields']['po_enddate']['importable']=true;
+$dictionary['Project']['fields']['po_enddate']['mass_update']=true;
+$dictionary['Project']['fields']['po_enddate']['audited']=true;
+$dictionary['Project']['fields']['po_enddate']['inline_edit']=true;
+$dictionary['Project']['fields']['po_enddate']['merge_filter']='disabled';
+?>

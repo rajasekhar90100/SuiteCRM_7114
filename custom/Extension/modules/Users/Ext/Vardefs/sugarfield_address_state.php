@@ -1,0 +1,12 @@
+<?php
+$dictionary['User']['fields']['address_state']['name']='address_state';
+$dictionary['User']['fields']['address_state']['dbType']='varchar';
+$dictionary['User']['fields']['address_state']['type']='dynamicenum';
+$dictionary['User']['fields']['address_state']['options']='state_list';
+$dictionary['User']['fields']['address_state']['parentenum']='address_country';
+$dictionary['User']['fields']['address_state']['importable']=true;
+$dictionary['User']['fields']['address_state']['mass_update']=true;
+$dictionary['User']['fields']['address_state']['audited']=true;
+$dictionary['User']['fields']['address_state']['inline_edit']=false;
+$dictionary['User']['fields']['address_state']['merge_filter']='disabled';
+?>	

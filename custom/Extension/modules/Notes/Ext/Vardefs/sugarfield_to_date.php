@@ -1,0 +1,10 @@
+<?php
+$dictionary['Note']['fields']['to_date']['type']='date';
+$dictionary['Note']['fields']['to_date']['vname']='LBL_TO_DATE';
+$dictionary['Note']['fields']['to_date']['importable']=true;
+$dictionary['Note']['fields']['to_date']['name']='to_date';
+$dictionary['Note']['fields']['to_date']['mass_update']=true;
+$dictionary['Note']['fields']['to_date']['audited']=true;
+$dictionary['Note']['fields']['to_date']['inline_edit']=false;
+$dictionary['Note']['fields']['to_date']['merge_filter']='disabled';
+?>

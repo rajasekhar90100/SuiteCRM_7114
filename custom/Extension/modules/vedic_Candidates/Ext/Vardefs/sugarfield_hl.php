@@ -1,0 +1,29 @@
+<?php
+ // created: 2017-11-21 06:55:53
+$dictionary['vedic_Candidates']['fields']['hl']['required']=true;
+$dictionary['vedic_Candidates']['fields']['hl']['source']='non-db';
+$dictionary['vedic_Candidates']['fields']['hl']['name']='hl';
+$dictionary['vedic_Candidates']['fields']['hl']['vname']='LBL_HL';
+$dictionary['vedic_Candidates']['fields']['hl']['type']='relate';
+$dictionary['vedic_Candidates']['fields']['hl']['massupdate']=0;
+$dictionary['vedic_Candidates']['fields']['hl']['no_default']=false;
+$dictionary['vedic_Candidates']['fields']['hl']['comments']='';
+$dictionary['vedic_Candidates']['fields']['hl']['help']='';
+$dictionary['vedic_Candidates']['fields']['hl']['importable']='true';
+$dictionary['vedic_Candidates']['fields']['hl']['duplicate_merge']='disabled';
+$dictionary['vedic_Candidates']['fields']['hl']['duplicate_merge_dom_value']='0';
+$dictionary['vedic_Candidates']['fields']['hl']['audited']=true;
+$dictionary['vedic_Candidates']['fields']['hl']['reportable']=true;
+$dictionary['vedic_Candidates']['fields']['hl']['unified_search']=false;
+$dictionary['vedic_Candidates']['fields']['hl']['merge_filter']='disabled';
+$dictionary['vedic_Candidates']['fields']['hl']['len']='255';
+$dictionary['vedic_Candidates']['fields']['hl']['size']='30';
+$dictionary['vedic_Candidates']['fields']['hl']['id_name']='hl_id';
+$dictionary['vedic_Candidates']['fields']['hl']['ext2']='Users';
+$dictionary['vedic_Candidates']['fields']['hl']['module']='Users';
+$dictionary['vedic_Candidates']['fields']['hl']['rname']='name';
+$dictionary['vedic_Candidates']['fields']['hl']['quicksearch']='enabled';
+$dictionary['vedic_Candidates']['fields']['hl']['studio']='visible';
+$dictionary['vedic_Candidates']['fields']['hl']['inline_edit']=true;
+
+ ?>

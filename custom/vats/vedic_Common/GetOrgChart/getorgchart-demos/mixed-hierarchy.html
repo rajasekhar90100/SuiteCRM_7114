@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- FileName => mixed-hierarchy.html
+	* Created By => Rajasekhar (Created On Mar-13-2018)
+	* Modified By => Rajasekhar (Modified On Mar-20-2018)
+	* COMMENT => Display organization chart -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="SHORTCUT ICON" href="themes/SuiteP/images/sugar_icon.ico">
+		<title>Savantis Org Chart</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script src="custom/vats/vedic_Common/GetOrgChart/getorgchart/getorgchart.js"></script>
+		<link href="custom/vats/vedic_Common/GetOrgChart/getorgchart/getorgchart.css" rel="stylesheet" />	
+
+		<style type="text/css">
+			html, body {
+				margin: 0px;
+				padding: 0px;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}			
+			#people {
+				width: 100%;
+				height: 100%;
+			}			
+		</style>
+	</head>
+	<body>
+		<div id="people"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			var hex2rgb = function (hex) {
+				var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+				return result ? [
+					parseInt(result[1], 16),
+					parseInt(result[2], 16),
+					parseInt(result[3], 16)
+				] : null;
+			};
+			var start = hex2rgb("#0066a4");
+			var end = hex2rgb("#666699");
+			var rgb2hex = function (rgb) {
+				return "#" + ((1 << 24) + (rgb[0] << 16) + (rgb[1] << 8) + rgb[2]).toString(16).slice(1);
+			};
+			 
+			var interpolateColor = function (color1, color2, factor) {
+				if (arguments.length < 3) {
+					factor = 0.5;
+				}
+				var result = color1.slice();
+				for (var i = 0; i < 3; i++) {
+					result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+				}
+				return result;
+			};
+	
+			$(document).ready(function(){
+				setInterval(function(){ $('a[title="GetOrgChart jquery plugin"]').hide(); }, 10);
+				$.ajax({
+					type: "POST",
+					dataType:"JSON",
+					url: "index.php?entryPoint=orgchart",
+					success : function(data) {
+						var res = data[0];
+						var result = [];
+						var Email_link = '<a href="mailto:'+res.Email+'">'+res.Email+'</a>';
+						result.push({ id: res.id, parentId: null ,name: res.Name , title: res.title,division:res.division,department:res.department,mobilephone: res.mobilephone,Email: Email_link});
+						$.each(data, function(index, value) {
+							if(value.EmailID == null) {
+								value.EmailID = '';
+								var Email_linkID = '<a href="mailto:'+value.EmailID+'">'+value.EmailID+'</a>';
+							}
+							else {
+								var Email_linkID = '<a href="mailto:'+value.EmailID+'">'+value.EmailID+'</a>';
+							}
+							result.push({ id: value.id, parentId: value.reports_to_id,name: value.Name,title: value.title ,division:value.division,department:value.department,mobilephone: value.mobilephone,Email: Email_linkID });
+						});
+						var peopleElement = document.getElementById("people");
+						var orgChart = new getOrgChart(peopleElement, {
+							theme: "sara",
+							enableEdit: false,
+							enableDetailsView: false,
+							scale: 0.4,
+							orientation: getOrgChart.RO_LEFT_PARENT_TOP,
+							primaryFields: ["name","title","division","department","mobilephone","Email"],
+							expandToLevel: 2,
+							enableGridView: true,
+							dataSource: result,
+							renderNodeEvent: renderNodeEventHandler
+						});
+						function renderNodeEventHandler(sender, args) {
+							var level = args.node.level;
+							var title = args.node.data["title"];
+							var rgb = interpolateColor(start, end, level);
+							var hex = rgb2hex(rgb);
+							args.content[1] = args.content[1].replace("rect", "rect style='fill: " + hex + "; stroke: " + hex + ";'") 
+						}
+					},
+				});
+			});
+		</script>
+	</body>
+</html>

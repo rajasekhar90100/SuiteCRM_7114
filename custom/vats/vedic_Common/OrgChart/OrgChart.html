@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- FileName => OrgChart.html
+	* Created By => Vineet (Created On Apr-08-2019)
+	* Modified By => Vineet (Modified On Apr-08-2019)
+	* COMMENT => Display organization chart -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="SHORTCUT ICON" href="custom/themes/SuiteP/images/sugar_icon.ico">
+		<title>Savantis Org Chart</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="custom/vats/vedic_Common/OrgChart/css/font-awesome.min.css">
+		<link rel="stylesheet" href="custom/vats/vedic_Common/OrgChart/css/jquery.orgchart.css">
+		<link rel="stylesheet" href="custom/vats/vedic_Common/OrgChart/css/style.css">
+	</head>
+	<body>
+		<div class="header">
+			<img alt="logo" class="logo" src="custom/themes/SuiteP/images/savantis_logo.png">
+			<h2>Organization Chart</h2>
+		</div>
+		
+		<div id="chart-container"></div>
+
+		<script src="custom/vats/vedic_Common/OrgChart/js/jquery.min.js"></script>
+		<!-- the following reference is specific for IE -->
+		<script type="text/javascript" src="custom/vats/vedic_Common/OrgChart/js/es6-promise.auto.min.js"></script>
+		<script type="text/javascript" src="custom/vats/vedic_Common/OrgChart/js/html2canvas.min.js"></script>
+		<script type="text/javascript" src="custom/vats/vedic_Common/OrgChart/js/jspdf.min.js"></script>
+		<script type="text/javascript" src="custom/vats/vedic_Common/OrgChart/js/jquery.orgchart.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$.ajax({
+					type: "POST",
+					dataType: "JSON",
+					url: "index.php?entryPoint=orgchartdata",
+					success: function(datascource) {
+						var nodeTemplate = function(data) {
+							return `<div class="title">${data.name}</div>
+							<div class="content">
+								<div>${data.title}</div>
+								<div>${data.division}</div>
+								<div>${data.department}</div>
+								<div>${data.phone}</div>
+								<div><a href="mailto:${data.email}">${data.email}</a></div>
+							</div>`;
+						};
+						var oc = $('#chart-container').orgchart({
+						  'data' : datascource,
+						  'visibleLevel': 2,
+						  'verticalLevel': 3,
+						  'nodeTemplate': nodeTemplate,
+						  'exportButton': true,
+						  'exportFilename': 'MyOrgChart',
+						  'toggleSiblingsResp': true
+						});
+						$('#chart-container').append('<button class="oc-report-btn">Users Report</button>');
+						$('#chart-container').append('<button class="oc-collapse-btn" style="display:none;">Collapse All</button>');
+						$('#chart-container').append('<button class="oc-expand-btn">Expand All</button>');
+						$('.oc-collapse-btn').click(function(){
+							$('.oc-collapse-btn').hide();
+							$('.oc-expand-btn').show();
+							oc.init({
+							  'visibleLevel': 1
+							});
+						});
+						$('.oc-expand-btn').click(function(){
+							$('.oc-expand-btn').hide();
+							$('.oc-collapse-btn').show();
+							oc.init({
+							  'visibleLevel': 999
+							});
+						});
+						$('.oc-report-btn').click(function(){
+							window.open('index.php?module=Users&action=UserReportsTo&return_module=Users', '_blank');
+						});
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

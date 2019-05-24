@@ -1,0 +1,10 @@
+<?php
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['name']='first_name';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['vname']='LBL_FIRST_NAME';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['type']='varchar';
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['importable']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['mass_update']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['audited']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['inline_edit']=true;
+$dictionary['vedic_GCPayroll_Deductions']['fields']['first_name']['merge_filter']='disabled';
+?>

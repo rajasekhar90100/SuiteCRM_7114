@@ -1,0 +1,11 @@
+ <?php
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['name']='start_date';
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['vname']='LBL_START_DATE';
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['type']='date';
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['importable']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['mass_update']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['audited']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['required']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['inline_edit']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['start_date']['merge_filter']='disabled';
+?>

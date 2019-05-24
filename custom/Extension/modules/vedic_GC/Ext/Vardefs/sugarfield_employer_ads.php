@@ -1,0 +1,12 @@
+<?php
+$dictionary['vedic_GC']['fields']['employer_ads']['name']='employer_ads';
+$dictionary['vedic_GC']['fields']['employer_ads']['vname']='LBL_EMPLOYER_ADS';
+$dictionary['vedic_GC']['fields']['employer_ads']['type']='radioenum';
+$dictionary['vedic_GC']['fields']['employer_ads']['dbType']='enum';
+$dictionary['vedic_GC']['fields']['employer_ads']['options']='gc_list';
+$dictionary['vedic_GC']['fields']['employer_ads']['importable']=true;
+$dictionary['vedic_GC']['fields']['employer_ads']['mass_update']=true;
+$dictionary['vedic_GC']['fields']['employer_ads']['audited']=true;
+$dictionary['vedic_GC']['fields']['employer_ads']['inline_edit']=false;
+$dictionary['vedic_GC']['fields']['employer_ads']['merge_filter']='disabled';
+?>

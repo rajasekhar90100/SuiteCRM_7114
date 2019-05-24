@@ -1,0 +1,15 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_VEDIC_JOB_VEDIC_SUBMISSIONS_1_FROM_VEDIC_SUBMISSIONS_TITLE'] = 'Candidate Submissions';
+$mod_strings['LBL_SECURITYGROUPS_VEDIC_JOB_1_FROM_SECURITYGROUPS_TITLE'] = 'Security Groups Management';
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_VEDIC_JOB_VEDIC_SUBMISSIONS_1_FROM_VEDIC_SUBMISSIONS_TITLE'] = 'Candidate Submissions';
+$mod_strings['LBL_SECURITYGROUPS_VEDIC_JOB_1_FROM_SECURITYGROUPS_TITLE'] = 'Security Groups Management';
+$mod_strings['LBL_VEDIC_JOB_VEDIC_CANDIDATES_1_FROM_VEDIC_CANDIDATES_TITLE'] = 'Candidates';
+
+?>

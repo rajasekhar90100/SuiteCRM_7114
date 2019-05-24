@@ -1,0 +1,11 @@
+<?php
+$dictionary['vedic_Solutions_Projects']['fields']['status']['name']='status';
+$dictionary['vedic_Solutions_Projects']['fields']['status']['vname']='LBL_STATUS';
+$dictionary['vedic_Solutions_Projects']['fields']['status']['type']='enum';
+$dictionary['vedic_Solutions_Projects']['fields']['status']['options']='project_status_dom';
+$dictionary['vedic_Solutions_Projects']['fields']['status']['importable']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['status']['mass_update']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['status']['audited']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['status']['inline_edit']=true;
+$dictionary['vedic_Solutions_Projects']['fields']['status']['merge_filter']='disabled';
+?>
